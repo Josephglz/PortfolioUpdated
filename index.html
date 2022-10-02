@@ -5,49 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Gonzalez - Home</title>
+    <title>Joseph Gonzalez</title>
+    <meta name="author" content="Joseph Gonzalez">
+    <meta name="description" content="Joseph Gonzalez, Software Developer">
+    <meta name="keywords" content="Joseph Gonzalez, Frontend Developer, Software Developer, Desarrollador, Programación, Web, Software, Developer, Code">
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
 
 <body class="bg-background font-ubuntu">
-    <div class="absolute w-screen">
-        <img src="assets/images/wave.svg" alt="">
-    </div>
-    <div class="flex flex-col px-24 py-60">
-        <h1 class="text-6xl font-bold text-whiteText cursor-default">Joseph Gonzalez</h1>
-        <p class="text-2xl mt-1 text-grayOpacity cursor-default">Software Engineer</p>
-
-        <div class="flex flex-row mt-6">
-            <div class="flex flex-row">
-                <a href="#" class="text-greenHover text-2xl font-bold mr-5 underline-offset-8 underline decoration-orangeHighlight">Home</a>
-                <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover">About</a>
-                <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover">Education</a>
-                <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover">Portfolio</a>
-                <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover">Experience</a>
-                <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover">Contact</a>
-            </div>
+    <!-- HOME SECTION -->
+    <div class="home hidden" id="home">
+        <div class="absolute w-screen">
+            <img src="assets/images/wave.svg" alt="">
         </div>
-
-        <div class="flex flex-row mt-5">
-            <div class="flex flex-row">
-                <div class="w-10 h-10 rounded-full flex justify-center items-center bg-grayOption mr-5">
-                    <a href="https://github.com/Josephglz" target="_blank" class="text-whiteText text-xl"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="w-10 h-10 rounded-full flex justify-center items-center bg-grayOption mr-5">
-                    <a href="https://www.linkedin.com/in/josephglz/" target="_blank" class="text-whiteText text-xl"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="w-10 h-10 rounded-full flex justify-center items-center bg-grayOption mr-5">
-                    <a href="https://twitter.com/JosephGlz99" target="_blank" class="text-whiteText text-xl"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
+        <div class="flex flex-col px-24 py-60">
+            <h1 class="text-6xl font-bold text-whiteText cursor-default">Joseph Gonzalez</h1>
+            <p class="text-2xl mt-1 text-grayOpacity cursor-default">Software Engineer</p>
         
-        <div class="absolute right-0 bottom-0">
-            <img src="assets/images/logo.svg" alt="">
+            <div class="flex flex-row mt-6">
+                <div class="flex flex-row">
+                    <a href="#" class="text-greenHover text-2xl mr-5 underline-offset-8 underline decoration-orangeHighlight" onclick="changePage('home')">Home</a>
+                    <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('about')">About</a>
+                    <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('education')">Education</a>
+                    <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('portfolio')">Portfolio</a>
+                    <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('experience')">Experience</a>
+                    <a href="#" class="text-whiteText text-2xl mr-5 hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('contact')">Contact</a>
+                </div>
+            </div>
+        
+            <div class="flex flex-row mt-5">
+                <div class="flex flex-row">
+                    <div class="w-10 h-10 rounded-full flex justify-center items-center bg-grayOption mr-5">
+                        <a href="https://github.com/Josephglz" target="_blank" class="text-whiteText text-xl"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="w-10 h-10 rounded-full flex justify-center items-center bg-grayOption mr-5">
+                        <a href="https://www.linkedin.com/in/josephglz/" target="_blank" class="text-whiteText text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="w-10 h-10 rounded-full flex justify-center items-center bg-grayOption mr-5">
+                        <a href="https://twitter.com/JosephGlz99" target="_blank" class="text-whiteText text-xl"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="absolute right-0 bottom-0">
+                <img src="assets/images/logo.svg" alt="">
+            </div>
         </div>
     </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="about" id="about">
+        <div class="flex items-center justify-between md:justify-start md:space-x-6 flex-row px-24 py-4">
+            <h2 class="font-ubuntu font-bold text-whiteText text-4xl pr-28 cursor-default">Joseph Gonzalez</h2>
+            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('home')">Home</a>
+            <a href="#" class="text-greenHover text-lg underline-offset-8 underline decoration-orangeHighlight" onclick="changePage('about')">About</a>
+            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('education')">Education</a>
+            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('portfolio')">Portfolio</a>
+            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('experience')">Experience</a>
+            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('contact')">Contact</a>
+            <a href="assets/files/CV.pdf" target="_blank" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-solid px-6 py-1 text-base font-ubuntu text-white shadow-sm hover:bg-grayOption">Download CV</a>
+        </div>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <div class="education hidden" id="education">
+        <h1 class="text-whiteText">Education</h1>
+    </div>
+
+    <!-- PORTFOLIO SECTION -->
+    <div class="portfolio hidden" id="portfolio">
+        <h1 class="text-whiteText">Portfolio</h1>
+    </div>
+
+    <!-- EXPERIENCE SECTION -->
+    <div class="experience hidden" id="experience">
+        <h1 class="text-whiteText">Experience</h1>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="contact hidden" id="contact">
+        <h1 class="text-whiteText">Contact</h1>
+    </div>
+
+
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
