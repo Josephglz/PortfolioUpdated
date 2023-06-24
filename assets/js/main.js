@@ -1,51 +1,57 @@
-$home = document.querySelector('.home');
-$about = document.querySelector('.about');
-$education = document.querySelector('.education');
-$experience = document.querySelector('.experience');
-$portfolio = document.querySelector('.portfolio');
-$contact = document.querySelector('.contact');
-
 function hidePages()
 {
-    $home.classList.add('hidden');
-    $about.classList.add('hidden');
-    $education.classList.add('hidden');
-    $experience.classList.add('hidden');
-    $portfolio.classList.add('hidden');
-    $contact.classList.add('hidden');
+    document.getElementById('home').classList.remove('hidden');
+    document.getElementById('about').classList.remove('hidden');
+    document.getElementById('education').classList.remove('hidden');
+    document.getElementById('experience').classList.remove('hidden');
+    document.getElementById('portfolio').classList.remove('hidden');
+    document.getElementById('contact').classList.remove('hidden');
+}
+
+function clearSectionStyle(section) {
+    document.getElementById(section).classList.remove('underline');
+    document.getElementById(section).classList.remove('decoration-orangeHighlight');
 }
 
 function changePage(page)
 {
     hidePages();
+    var menu = document.getElementById('menu-active');
     switch(page)
     {
         case 'home':
-            $home.classList.remove('hidden');
+            document.getElementById('home').classList.remove('hidden');
+            menu.classList.add('hidden');
             break;
 
         case 'about':
-            $about.classList.remove('hidden');
+            document.getElementById('about').classList.remove('hidden');
+            menu.classList.remove('hidden');
             break;
 
         case 'education':
-            $education.classList.remove('hidden');
+            document.getElementById('education').classList.remove('hidden');
+            menu.classList.remove('hidden');
             break;
 
         case 'experience':
-            $experience.classList.remove('hidden');
+            document.getElementById('experience').classList.remove('hidden');
+            menu.classList.remove('hidden');
             break;
 
         case 'portfolio':
-            $portfolio.classList.remove('hidden');
+            document.getElementById('portfolio').classList.remove('hidden');
+            menu.classList.remove('hidden');
             break;
 
         case 'contact':
-            $contact.classList.remove('hidden');
+            document.getElementById('contact').classList.remove('hidden');
+            menu.classList.remove('hidden');
             break;
 
         default:
-            $home.classList.remove('hidden');
+            document.getElementById('home').classList.remove('hidden');
+            menu.classList.add('hidden');
             break;
 
     }

@@ -18,7 +18,7 @@
 
 <body class="bg-background font-ubuntu">
     <!-- HOME SECTION -->
-    <div class="home hidden" id="home">
+    <div class="home" id="home">
         <div class="absolute w-screen">
             <img src="assets/images/wave.svg" alt="">
         </div>
@@ -56,19 +56,23 @@
             </div>
         </div>
     </div>
+    
+    <div id="menu-active" class="hidden">
+        <div class="flex items-center justify-between md:justify-start md:space-x-6 flex-row px-24 py-4 bg-gray-900">
+            <h2 class="font-ubuntu font-bold text-whiteText text-4xl pr-28 cursor-default">Joseph Gonzalez</h2>
+            <a id="homeLink" href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('home')">Home</a>
+            <a id="aboutLink" href="#" class="text-greenHover text-lg underline-offset-8 underline decoration-orangeHighlight" onclick="changePage('about')">About</a>
+            <a id="educationLink" href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('education')">Education</a>
+            <a id="portfolioLink" href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('portfolio')">Portfolio</a>
+            <a id="experienceLink" href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('experience')">Experience</a>
+            <a id="contactLink" href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('contact')">Contact</a>
+            <a id="" href="assets/files/CV.pdf" target="_blank" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-solid px-6 py-1 text-base font-ubuntu text-white shadow-sm hover:bg-grayOption">Download CV</a>
+        </div>
+    </div>
 
     <!-- ABOUT SECTION -->
-    <div class="about" id="about">
-        <div class="flex items-center justify-between md:justify-start md:space-x-6 flex-row px-24 py-4">
-            <h2 class="font-ubuntu font-bold text-whiteText text-4xl pr-28 cursor-default">Joseph Gonzalez</h2>
-            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('home')">Home</a>
-            <a href="#" class="text-greenHover text-lg underline-offset-8 underline decoration-orangeHighlight" onclick="changePage('about')">About</a>
-            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('education')">Education</a>
-            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('portfolio')">Portfolio</a>
-            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('experience')">Experience</a>
-            <a href="#" class="text-whiteText text-lg hover:underline hover:underline-offset-8 hover:decoration-orangeHighlight hover:text-greenHover" onclick="changePage('contact')">Contact</a>
-            <a href="assets/files/CV.pdf" target="_blank" class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-solid px-6 py-1 text-base font-ubuntu text-white shadow-sm hover:bg-grayOption">Download CV</a>
-        </div>
+    <div class="about hidden" id="about">
+        
     </div>
 
     <!-- EDUCATION SECTION -->
